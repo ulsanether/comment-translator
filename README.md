@@ -12,7 +12,7 @@
 지원되는 버전：Visual Studio 2019, 202
 
 
-### 초기화 설치치
+### 초기화 설치
 
 [![设置](Images/Options.png)
 
