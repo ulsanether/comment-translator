@@ -4,7 +4,7 @@
 
 아래 참조로 한글로 수정
 [marketplace](https://marketplace.visualstudio.com/items?itemName=Hikari.CommentTranslator64)
-[Comment Translator](https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator)已经不再维护，
+[Comment Translator](https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator)
 
 최초의 제작자 
 [comment-translator-china](https://github.com/netcorevip/comment-translator-china)
@@ -12,7 +12,7 @@
 지원되는 버전：Visual Studio 2019, 202
 
 
-### 초기화 설
+### 초기화 설치치
 
 [![设置](Images/Options.png)
 
