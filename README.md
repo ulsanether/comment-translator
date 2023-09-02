@@ -9,7 +9,7 @@
 최초의 제작자 
 [comment-translator-china](https://github.com/netcorevip/comment-translator-china)
 
-지원되는 버전：Visual Studio 2019, 202
+지원되는 버전：Visual Studio 2022
 
 
 ### 초기화 설치
