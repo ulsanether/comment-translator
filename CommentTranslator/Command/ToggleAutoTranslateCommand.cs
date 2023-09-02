@@ -19,7 +19,7 @@ namespace CommentTranslator.Command
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        public static readonly Guid CommandSet = new Guid("a957190e-e8f5-4158-94c9-06e36f63c123");
+        public static readonly Guid CommandSet = new Guid("53D8289A-6FA8-4CCA-B3FF-660944675E0D");
 
         /// <summary>
         /// VS Package that provides this command, not null.
