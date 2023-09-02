@@ -14,7 +14,7 @@ namespace Framework
         {
             var client = new HttpClient();
             string r = "";
-            string url = "https://cn.bing.com/translator";
+            string url = "https://kr.bing.com/translator";
             var request = new HttpRequestMessage(HttpMethod.Get, new Uri(url));
             HttpResponseMessage response = await client.SendAsync(request);
             string html = await response.Content.ReadAsStringAsync();

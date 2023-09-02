@@ -27,9 +27,9 @@ namespace Framework
                 case TranslateServerEnum.Bing:
                     BingFanyi bingFanyi = new BingFanyi();
                     return await bingFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);
-                case TranslateServerEnum.百度:
+                case TranslateServerEnum.바이두:
                     break;
-                case TranslateServerEnum.有道:
+                case TranslateServerEnum.유다오:
                     YoudaoFanyi youdaoFanyi = new YoudaoFanyi();
                     return await youdaoFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);
                 default:
@@ -96,6 +96,9 @@ namespace Framework
                         case LanguageEnum.English:
                             s = "en";
                             break;
+                        case LanguageEnum.한국어:
+                            s = "ko-KR";
+                            break;
                         default:
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);
                     }
@@ -118,13 +121,16 @@ namespace Framework
                         case LanguageEnum.English:
                             s = "en";
                             break;
+                        case LanguageEnum.한국어:
+                            s = "ko-KR";
+                            break;
                         default:
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);
                     }
                     break;
-                case TranslateServerEnum.百度:
+                case TranslateServerEnum.바이두:
                     break;
-                case TranslateServerEnum.有道:
+                case TranslateServerEnum.유다오:
                     switch (language)
                     {
                         case LanguageEnum.Auto:
@@ -141,6 +147,9 @@ namespace Framework
                             break;
                         case LanguageEnum.English:
                             s = "en";
+                            break;
+                        case LanguageEnum.한국어:
+                            s = "ko-KR";
                             break;
                         default:
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);

@@ -119,10 +119,10 @@
   </resheader>
   <data name="110" xml:space="preserve">
     <value>CommentTranslator64</value>
-    <comment>关于页-标题</comment>
+    <comment>페이지 정보 - 제목</comment>
   </data>
   <data name="112" xml:space="preserve">
     <value>Extension of visual studio that automatic translate comment in you open file</value>
-    <comment>关于页-说明</comment>
+    <comment>페이지 설명 정보</comment>
   </data>
 </root>
