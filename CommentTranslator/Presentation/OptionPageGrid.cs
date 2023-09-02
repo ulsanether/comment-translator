@@ -10,24 +10,24 @@ namespace CommentTranslator.Presentation
     public class OptionPageGrid : DialogPage
     {
         [Category("Server")]
-        [DisplayName("翻译服务器")]
-        [Description("翻译服务器")]
+        [DisplayName("번역 서버")]
+        [Description("번역 서버")]
         public TranslateServerEnum TranslateServer { get; set; } = TranslateServerEnum.Google;
 
         /// <summary>
         /// Gets or sets a value indicating whether 待翻译语言
         /// </summary>
         [Category("Translate")]
-        [DisplayName("待翻译语言")]
-        [Description("待翻译语言类型")]
+        [DisplayName("번역할 언어")]
+        [Description("번역할 언어 유형")]
         public LanguageEnum TranslateFrom { get; set; } = LanguageEnum.Auto;
 
         /// <summary>
         /// Gets or sets a value indicating whether 目标语言
         /// </summary>
         [Category("Translate")]
-        [DisplayName("翻译成语言")]
-        [Description("翻译为目标语言类型")]
+        [DisplayName("언어로 번역")]
+        [Description("대상 언어 유형으로 번역")]
         public LanguageEnum TranslatetTo { get; set; } = GetCurrentCulture();
 
         ///// <summary>
@@ -39,13 +39,13 @@ namespace CommentTranslator.Presentation
         //public bool AutoDetect { get; set; } = false;
 
         [Category("Translate")]
-        [DisplayName("打开文件自动翻译")]
-        [Description("打开文件时自动翻译注释")]
+        [DisplayName("자동 번역을 위해 파일 열기")]
+        [Description("파일을 열 때 댓글을 자동으로 번역합니다.")]
         public bool AutoTranslateComment { get; set; } = false;
 
         [Category("Translate")]
-        [DisplayName("手动翻译自动复制")]
-        [Description("手动翻译自动复制内容到剪切板")]
+        [DisplayName("수동 번역 및 자동 복사")]
+        [Description("수동 번역은 자동으로 콘텐츠를 클립보드에 복사합니다.")]
         public bool AutoTextCopy { get; set; } = false;
 
         protected override void OnApply(PageApplyEventArgs e)
@@ -93,8 +93,10 @@ namespace CommentTranslator.Presentation
                     return LanguageEnum.繁體中文;
                 case "en-US":
                     return LanguageEnum.English;
+                case "ko-KR":
+                    return LanguageEnum.한국어;
                 default:
-                    return LanguageEnum.简体中文;
+                    return LanguageEnum.한국어;
             }
         }
     }

@@ -272,7 +272,7 @@ namespace CommentTranslator.Ardonment
                 _translatedComment = comment;
                
                 //Display wait translate
-                WaitTranslate("翻译中...");
+                WaitTranslate("번역중...");
 
                 //Translate comment
                 Task.Run(() => CommentTranslatorPackage.TranslateClient.TranslateAsync(comment.Content))
