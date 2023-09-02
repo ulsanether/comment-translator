@@ -2,46 +2,37 @@
 
 [![Build status](https://dev.azure.com/netcorevip/BuildsGit/_apis/build/status/comment-translator-china-CI)](https://dev.azure.com/netcorevip/BuildsGit/_build/latest?definitionId=9)[![Build status](https://ci.appveyor.com/api/projects/status/j2dx6u8lpwwi75gn?svg=true)](https://ci.appveyor.com/project/corevip/comment-translator-china)
 
-从[marketplace](https://marketplace.visualstudio.com/items?itemName=Hikari.CommentTranslator64)下载此扩展程序
+아래 참조로 한글로 수정
+[marketplace](https://marketplace.visualstudio.com/items?itemName=Hikari.CommentTranslator64)
+[Comment Translator](https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator)已经不再维护，
 
-------
+최초의 제작자 
+[comment-translator-china](https://github.com/netcorevip/comment-translator-china)
 
-选中文本翻译，未选中默认翻译光标所在行，在打开文件中自动翻译注释。
-
-因为[Comment Translator](https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator)已经不再维护，
-
-现进行修改已便使用。
-
-参考自[comment-translator-china](https://github.com/netcorevip/comment-translator-china)
-
-支持vs版本：Visual Studio 2019, 2022，其他版本均不支持。
+지원되는 버전：Visual Studio 2019, 202
 
 
-
-### 初始化设置
-
-~~需要设置谷歌TKK值才能使用翻译功能，~~下一步骤自动设置
+### 초기화 설
 
 [![设置](Images/Options.png)
 
 
-## 功能
+## 기능
 
-#### 手动翻译
+#### 수동번역
 
-- 选中文本通过右键单击翻译菜单或快捷键Alt+Z翻译
-- 如果未选择文本，则自动选择行
-- 一键复制翻译的文本
-
-![手动翻译](Images/Auto-Selecte-Line.gif)
-
+텍스트를 선택하고 마우스 오른쪽 버튼 클릭 번역 메뉴 또는 단축키 Alt+Z를 통해 번역합니다.
+텍스트를 선택하지 않은 경우 자동으로 줄 선택
+한 번의 클릭으로 번역된 텍스트 복사
+![수동 번역](Images/Auto-Selecte-Line.gif)
 
 
-#### 自动翻译
 
-- 自动翻译打开文件中的注释。
+#### 자동번
 
-##### 支持语言文件
+- 열려 있는 파일의 주석을 자동으로 번역합니다.
+
+##### 지원 언어 파일
 
 - CSharp
 - C/C++
@@ -55,35 +46,34 @@
 - Python
 - Razor
 
-##### 打开/关闭打开文件自动翻译功能
+##### 열린 파일의 자동 번역 켜기/끄기
 
-- 右键单击打开/关闭自动翻译或者快捷键ALT+Shift+Z
-- 工具->选项->Comment Translator China->里面设置打开/关闭
+마우스 오른쪽 버튼을 클릭하여 자동 번역 또는 단축키 ALT+Shift+Z를 켜거나 끕니다.
+도구->옵션->댓글 번역기 한->설정/해제
 
 ![SetAuto](Images/SetAuto.gif)
 
 
 
-#### 在打开文件中自动翻译
+#### 열린 파일의 자동 번역
 
-> 已打开文件，关闭文件重新打开生效
+> 파일이 열렸습니다. 파일을 닫았다가 다시 열면 적용됩니다.
 
-![自动翻译注释](Images/Auto-File-translate.gif)
-
-
-
-来源：基于扩展[Comment Translator](<https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator>)修改
+![메모 자동 번역](Images/Auto-File-translate.gif)
 
 
 
-## 贡献
 
-如果您想为此项目做出贡献，请查看[贡献指南](CONTRIBUTING.md)。
+출처: [Comment Translator](<https://marketplace.visualstudio.com/items?itemName=NguynThunTan.CommentTranslator>)
+
+
+
+## 기여
+
+이 프로젝트에 기여하고 싶다면 [가이드라인](CONTRIBUTING.md)。을 참고해주세요.
 
 ## License
 
 [Apache 2.0](LICENSE.txt)
 
-目前引用Newtonsoft.Json 13.0.x版本时，需要在vsixmanifest文件中添加Asset Type="Microsoft.VisualStudio.Assembly"
-而引用12.0.x时不需要，暂时不知道原因。
-
+현재 Newtonsoft.Json 13.0.x 버전을 인용할 경우 vsixmanifest 파일에 Asset Type="Microsoft.VisualStudio.Assembly"를 추가해야 하는데, 12.0.x를 인용할 때는 그렇지 않습니다. 아직은 이유를 모르겠습니다.
