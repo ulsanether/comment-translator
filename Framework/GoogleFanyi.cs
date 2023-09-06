@@ -16,7 +16,7 @@ namespace Framework
             string url = "https://translate.google.com/_/TranslateWebserverUi/data/batchexecute";
             var request = new HttpRequestMessage(HttpMethod.Post, new Uri(url));
             IDictionary<string, string> dic = new Dictionary<string, string>();
-            dic.Add("f.req", $"[[[\"MkEWBc\",\"[[\\\"{body}\\\",\\\"{from}\\\",\\\"{to}\\\",true],[null]]\", null, \"generic\"]]]");
+            dic.Add("f.req", $"[[[\"MkEWBc\",\"[[\\\"{body}\\\",\\\"{from}\\\",\\\"{to}\\\",true], [null]]\", null, \"generic\"]]]");
             var data = new FormUrlEncodedContent(dic);
             request.Content = data;
             HttpResponseMessage response = await client.SendAsync(request);

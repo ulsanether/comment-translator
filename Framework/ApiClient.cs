@@ -123,6 +123,7 @@ namespace Framework
                             break;
                         case LanguageEnum.한국어:
                             s = "ko-KR";
+                           // s = "ko";
                             break;
                         default:
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);
