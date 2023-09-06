@@ -24,14 +24,14 @@ namespace Framework
                 case TranslateServerEnum.Google:
                     GoogleFanyi googleFanyi = new GoogleFanyi();
                     return await googleFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);
-                case TranslateServerEnum.Bing:
+           /*     case TranslateServerEnum.Bing:
                     BingFanyi bingFanyi = new BingFanyi();
                     return await bingFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);
                 case TranslateServerEnum.바이두:
                     break;
                 case TranslateServerEnum.유다오:
                     YoudaoFanyi youdaoFanyi = new YoudaoFanyi();
-                    return await youdaoFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);
+                    return await youdaoFanyi.Fanyi(apiRequest.Body, fromLanguage, toLanguage, apiRequest.FromLanguage, apiRequest.ToLanguage);*/
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -78,7 +78,7 @@ namespace Framework
             string s = "";
             switch (translateServer)
             {
-                case TranslateServerEnum.Bing:
+              /*  case TranslateServerEnum.Bing:
                     switch (language)
                     {
                         case LanguageEnum.Auto:
@@ -102,7 +102,7 @@ namespace Framework
                         default:
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);
                     }
-                    break;
+                    break;*/
                 case TranslateServerEnum.Google:
                     switch (language)
                     {
@@ -128,33 +128,35 @@ namespace Framework
                             throw new ArgumentOutOfRangeException(nameof(language), language, null);
                     }
                     break;
-                case TranslateServerEnum.바이두:
-                    break;
-                case TranslateServerEnum.유다오:
-                    switch (language)
-                    {
-                        case LanguageEnum.Auto:
-                            s = "auto";
-                            break;
-                        case LanguageEnum.日本語:
-                            s = "ja";
-                            break;
-                        case LanguageEnum.简体中文:
-                            s = "zh-CHS";
-                            break;
-                        case LanguageEnum.繁體中文:
-                            s = "zh-CHS";
-                            break;
-                        case LanguageEnum.English:
-                            s = "en";
-                            break;
-                        case LanguageEnum.한국어:
-                            s = "ko-KR";
-                            break;
-                        default:
-                            throw new ArgumentOutOfRangeException(nameof(language), language, null);
-                    }
-                    break;
+                /*  case TranslateServerEnum.바이두:
+                      break;
+                  case TranslateServerEnum.유다오:
+                      switch (language)
+                      {
+                          case LanguageEnum.Auto:
+                              s = "auto";
+                              break;
+                          case LanguageEnum.日本語:
+                              s = "ja";
+                              break;
+                          case LanguageEnum.简体中文:
+                              s = "zh-CHS";
+                              break;
+                          case LanguageEnum.繁體中文:
+                              s = "zh-CHS";
+                              break;
+                          case LanguageEnum.English:
+                              s = "en";
+                              break;
+                          case LanguageEnum.한국어:
+                              s = "ko-KR";
+                              break;
+                          default:
+                              throw new ArgumentOutOfRangeException(nameof(language), language, null);
+                      }
+                      break;
+
+        }*/
                 default:
                     throw new ArgumentOutOfRangeException(nameof(translateServer), translateServer, null);
             }

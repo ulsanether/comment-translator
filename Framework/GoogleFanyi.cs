@@ -12,6 +12,7 @@ namespace Framework
         {
             var client = new HttpClient();
             string r = "";
+            //string url = "https://translate.google.com/_/TranslateWebserverUi/data/batchexecute";
             string url = "https://translate.google.com/_/TranslateWebserverUi/data/batchexecute";
             var request = new HttpRequestMessage(HttpMethod.Post, new Uri(url));
             IDictionary<string, string> dic = new Dictionary<string, string>();
