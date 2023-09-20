@@ -6,9 +6,7 @@ using Microsoft.VisualStudio.Text;
 
 namespace CommentTranslator.Presentation
 {
-    /// <summary>
-    /// 翻译内容显示
-    /// </summary>
+
     public partial class TranslatePopup : UserControl
     {
         #region Fields
@@ -71,12 +69,12 @@ namespace CommentTranslator.Presentation
                         {
                             if (data.Result.Code == 200)
                             {
-                                //弹窗提示
+                             
                                 tblDirection.Text = $"{data.Result.FromLanguage.ToLower()} -> {data.Result.ToLanguage.ToString().ToLower()}";
                                 tblTranslatedText.Text = data.Result.Data;
                                 bdTranslatedText.Visibility = Visibility.Visible;
 
-                                if (CommentTranslatorPackage.Settings.AutoTextCopy) //包初始化的时候赋值
+                                if (CommentTranslatorPackage.Settings.AutoTextCopy) 
                                 {
                                     Clipboard.SetText(data.Result.Data);
                                 }
