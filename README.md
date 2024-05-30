@@ -1,4 +1,9 @@
+#비쥬얼스튜디오 번역기 플러그인제작. 
+#그냥 만듬. 
+
 # Comment Translator for Visual Studio 2022
+
+
 
 [![Build status](https://dev.azure.com/netcorevip/BuildsGit/_apis/build/status/comment-translator-china-CI)](https://dev.azure.com/netcorevip/BuildsGit/_build/latest?definitionId=9)[![Build status](https://ci.appveyor.com/api/projects/status/j2dx6u8lpwwi75gn?svg=true)](https://ci.appveyor.com/project/corevip/comment-translator-china)
 
